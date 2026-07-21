@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { registerLocaleData } from "@angular/common";
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -42,7 +43,8 @@ registerLocaleData(localePt, "pt-BR", localePtExtra);
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAnalyticsModule,
-    HammerModule
+    HammerModule,
+    RouterModule
   ],
   declarations: [ AppComponent ],
   bootstrap: [ AppComponent ],
