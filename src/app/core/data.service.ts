@@ -1,39 +1,30 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { Observable, throwError } from "rxjs";
-import { catchError } from "rxjs/operators";
+import { Observable, of } from "rxjs";
 
 import { IExperience } from "../experience/experience-interfaces";
 import { IAbout } from "../about/about-interfaces";
 import { IPost } from "../posts/posts-interfaces";
+
+import experiences from "../../assets/data/experiences.json";
+import about from "../../assets/data/about.json";
+import posts from "../../assets/data/posts.json";
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  private readonly baseUrl = '/assets/data/';
-
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
   getExperiences(): Observable<IExperience[]> {
-    return this.http.get<IExperience[]>(`${this.baseUrl}experiences.json`)
-      .pipe(catchError(this.handleError));
+    return of(experiences as IExperience[]);
   }
 
   getAbout(): Observable<IAbout> {
-    return this.http.get<IAbout>(`${this.baseUrl}about.json`)
-      .pipe(catchError(this.handleError));
+    return of(about as IAbout);
   }
 
   getPosts(): Observable<IPost[]> {
-    return this.http.get<IPost[]>(`${this.baseUrl}posts.json`)
-      .pipe(catchError(this.handleError));
-  }
-
-  private handleError(error: any) {
-    console.error("server error:", error);
-    const errMessage = error.error?.message || error.message || "backend server error";
-    return throwError(() => errMessage);
+    return of(posts as IPost[]);
   }
 }

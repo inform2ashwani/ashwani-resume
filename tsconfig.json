@@ -12,6 +12,8 @@
     "importHelpers": true,
     "skipLibCheck": true,
     "target": "ES2022",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "typeRoots": [
       "node_modules/@types"
     ],
