@@ -1,9 +1,6 @@
 {
-  "rewrites": [
-    { "source": "/en", "destination": "/index.html" },
-    { "source": "/pt", "destination": "/index.html" },
-    { "source": "/en/(.*)", "destination": "/index.html" },
-    { "source": "/pt/(.*)", "destination": "/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }

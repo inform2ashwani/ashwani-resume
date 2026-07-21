@@ -12,7 +12,7 @@ import { IPost } from "../posts/posts-interfaces";
 })
 export class DataService {
 
-  private readonly baseUrl = '/assets/data/';
+  private readonly baseUrl = 'assets/data/';
 
   constructor(private http: HttpClient) {}
 
