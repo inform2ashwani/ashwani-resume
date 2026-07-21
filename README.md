@@ -22,7 +22,7 @@
 <div align="center">
 <br>
 
-[![Watch the video](/markdown/LiveResumeGuilhermeBorgesBastos-v7.1.gif)](https://guilhermeborgesbastos.com/?source=github)
+[![Watch the video](/markdown/LiveResumeGuilhermeBorgesBastos-v7.1.gif)](https://ashwani.net/?source=github)
 
 </div>
 
@@ -39,8 +39,8 @@ Get rid of your old and deprecated text resume by using the first **Open-source 
 * Optimized for SEO  _( Crawler and Bots from Google, Bing, etc... )_;
 * Using the schemas for structured data (schema.org);
 * Firebase integration in the contact form;
-* Composed of 5 custom sections ([Welcome](https://guilhermeborgesbastos.com/), [About Me](https://guilhermeborgesbastos.com/about), [Experiences](https://guilhermeborgesbastos.com/experience), [Posts](https://guilhermeborgesbastos.com/posts), and [Contact](https://guilhermeborgesbastos.com/contact));
-* Router fragment friendly (e.g: https://guilhermeborgesbastos.com/posts );
+* Composed of 5 custom sections ([Welcome](https://ashwani.net/), [About Me](https://ashwani.net/about), [Experiences](https://ashwani.net/experience), [Posts](https://ashwani.net/posts), and [Contact](https://ashwani.net/contact));
+* Router fragment friendly (e.g: https://ashwani.net/posts );
 * Source code verified by static code analyzers _(safe and ready for production)_;
 
 ## Changelog
@@ -127,7 +127,7 @@ This project uses several open source packages:
 
 ---
 
-> Site [www.guilhermeborgesbastos.com](https://www.guilhermeborgesbastos.com)<br>
+> Site [www.ashwani.net](https://www.ashwani.net)<br>
 > LinkedIn [profile](https://www.linkedin.com/in/guilhermeborgesbastos)<br>
 > Facebook [profile](https://www.facebook.com/guilherme.borgesbastos)
 

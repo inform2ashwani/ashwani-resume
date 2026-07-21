@@ -22,7 +22,7 @@
 <div align="center">
 <br>
 
-[![Watch the video](/markdown/LiveResumeGuilhermeBorgesBastos-v7.1.gif)](https://guilhermeborgesbastos.com/?source=github)
+[![Watch the video](/markdown/LiveResumeGuilhermeBorgesBastos-v7.1.gif)](https://ashwani.net/?source=github)
 
 </div>
 
@@ -39,8 +39,8 @@
 * 为SEO进行了优化（针对Google、Bing等爬虫和机器人）。
 * 使用结构化数据模式（schema.org）
 * 联系表单中集成了Firebase
-* 由5个自定义部分组成 ([欢迎](https://guilhermeborgesbastos.com/), [关于我](https://guilhermeborgesbastos.com/about), [经历](https://guilhermeborgesbastos.com/experience), [帖子](https://guilhermeborgesbastos.com/posts), and [联系方式](https://guilhermeborgesbastos.com/contact))
-* 友好的路由片段（例如：https://guilhermeborgesbastos.com/posts）
+* 由5个自定义部分组成 ([欢迎](https://ashwani.net/), [关于我](https://ashwani.net/about), [经历](https://ashwani.net/experience), [帖子](https://ashwani.net/posts), and [联系方式](https://ashwani.net/contact))
+* 友好的路由片段（例如：https://ashwani.net/posts）
 * 经过静态代码分析器验证的源代码（安全并做好了生产准备）
 
 ## 更新日志
@@ -126,7 +126,7 @@ npm install -g @angular/cli
 
 ---
 
-> 网站： [www.guilhermeborgesbastos.com](https://www.guilhermeborgesbastos.com)<br>
+> 网站： [www.ashwani.net](https://www.ashwani.net)<br>
 > LinkedIn [profile](https://www.linkedin.com/in/guilhermeborgesbastos)<br>
 > Facebook [profile](https://www.facebook.com/guilherme.borgesbastos)
 
