@@ -1,4 +1,5 @@
-import { Injectable } from "@angular/core";
+import { Inject, Injectable } from "@angular/core";
+import { DOCUMENT } from "@angular/common";
 import { HttpClient } from "@angular/common/http";
 
 import { Observable } from "rxjs";
@@ -11,29 +12,38 @@ import { IPost } from "../posts/posts-interfaces";
 @Injectable()
 export class DataService {
 
-    baseUrl: string = "assets/data/";
+    private readonly baseUrl: string;
     
-    constructor(private http: HttpClient) { }
+    constructor(
+        private http: HttpClient,
+        @Inject(DOCUMENT) private document: Document
+    ) {
+        this.baseUrl = new URL("assets/data/", this.document.baseURI).toString();
+    }
 
     getExperiences() : Observable<IExperience[]> {
-        return this.http.get<IExperience[]>(this.baseUrl + "experiences.json")
+        return this.http.get<IExperience[]>(this.getDataUrl("experiences.json"))
             .pipe(
                 catchError(this.handleError)
             );
     }
     
     getAbout() : Observable<IAbout> {
-      return this.http.get<IAbout>(this.baseUrl + "about.json")
+      return this.http.get<IAbout>(this.getDataUrl("about.json"))
           .pipe(
               catchError(this.handleError)
           );
     }
 
     getPosts() : Observable<IPost[]> {
-        return this.http.get<IPost[]>(this.baseUrl + "posts.json")
+        return this.http.get<IPost[]>(this.getDataUrl("posts.json"))
             .pipe(
                 catchError(this.handleError)
             );
+    }
+
+    private getDataUrl(fileName: string): string {
+        return new URL(`assets/data/${fileName}`, this.document.baseURI).toString();
     }
 
     private handleError(error: any) {
