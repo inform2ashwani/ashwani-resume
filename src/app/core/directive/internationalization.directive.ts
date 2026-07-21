@@ -29,14 +29,18 @@ export class InternationalizationDirective {
 
     private retrievePropertyValueByLocation(): any {
 
-        if(this._data) {
+        if (this._data && this._data.length > 0) {
+            const localizedValue = this._data.find(element => element.language === (this.locale || "en"));
 
-            const value: string[] = this._data
-                .filter(element => element.language === (this.locale || "en"))
-                .map(element => element[this.property]) || [""];
+            if (!localizedValue) {
+                return "";
+            }
 
-            return this.ellipsis > 0 ? new EllipsisPipe().transform(value[0], this.ellipsis) : value;
+            const value = localizedValue[this.property];
 
+            return this.ellipsis > 0 ? new EllipsisPipe().transform(value, this.ellipsis) : value;
         }
+
+        return "";
     }
 }
