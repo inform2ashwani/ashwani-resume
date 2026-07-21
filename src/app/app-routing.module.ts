@@ -5,6 +5,7 @@ import { ResumeComponent } from "./resume/resume.component";
 const routes: Routes = [
   { path: "", component: ResumeComponent },   // root shows English resume
   { path: "en", component: ResumeComponent }, // optional explicit /en route
+  { path: "pt", component: ResumeComponent }, // Portuguese route
   { path: "about", redirectTo: "/#about" },
   { path: "experience", redirectTo: "/#experience" },
   { path: "experiences", redirectTo: "/#experience" },
