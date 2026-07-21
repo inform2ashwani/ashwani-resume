@@ -1,7 +1,9 @@
 {
   "rewrites": [
-    { "source": "/en/assets/(.*)", "destination": "/assets/$1" },
-    { "source": "/pt/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/en", "destination": "/index.html" },
+    { "source": "/pt", "destination": "/index.html" },
+    { "source": "/en/(.*)", "destination": "/index.html" },
+    { "source": "/pt/(.*)", "destination": "/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
