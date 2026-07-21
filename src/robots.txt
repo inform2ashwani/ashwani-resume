@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://ashwani.net/sitemap.xml
